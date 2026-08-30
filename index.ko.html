@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>박나겸 — 데이터 사이언티스트</title>
+<meta name="description" content="데이터 사이언티스트 박나겸(Nagyeom Park)의 이력서 및 포트폴리오 — 캠페인 자동화, 브랜드 추천 시스템, 상품 메타데이터 추출.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.en.html" hreflang="en">English</a>
+  <button onclick="window.print()" type="button">인쇄 / PDF로 저장</button>
+</div>
+
+<main class="page">
+
+  <header class="masthead">
+    <h1>박나겸 <span class="name-en">Nagyeom Park</span></h1>
+    <div class="role">데이터 사이언티스트</div>
+    <ul class="contact-list">
+      <li>서울, 대한민국</li>
+      <li><a href="mailto:naomipark206@gmail.com">naomipark206@gmail.com</a></li>
+      <li><a href="tel:+821041036329">+82 10-4103-6329</a></li>
+      <li><a href="https://www.linkedin.com/in/naomipark-24487b247" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </header>
+
+  <section class="summary">
+    <h2 class="section-title">요약</h2>
+    <p>이커머스 도메인에서 5년간 데이터 사이언티스트로 일했습니다. 그중 2년은 AI 기반 프로덕트를 만들었고, 3년은 데이터 분석 업무를 담당했습니다. 인문학을 전공한 배경 덕분에 사용자 행동과 그 이면의 심리적 동기를 읽는 데 익숙하고, 이를 바탕으로 사람 중심의 AI를 설계하려 합니다. 캠페인 자동화, 브랜드 추천 시스템, RFM 고객 세분화, 대규모 상품 메타데이터 추출이 주요 업무 영역입니다.</p>
+    <p>대표적으로, 상품 상세페이지 이미지 안에만 담겨 있던 소재·계절감·용도 같은 속성 정보를 LLM으로 추출해 자사 DB에 저장하고, 이를 GCP Vertex Search에 색인해 '휴가룩', '러블리'처럼 감성·스타일 기반 키워드로도 상품을 찾을 수 있도록 만들었습니다.</p>
+
+    <a class="callout" href="https://youtu.be/ya3NrPPY67w?si=jgMGDJByTdV1jHS6" target="_blank" rel="noopener">
+      <span class="play" aria-hidden="true">&#9654;</span>
+      <span class="callout-text">
+        <span class="label">발표 영상 — AWS AI Industry Week</span>
+        <span class="title">"메타데이터 추출 자동화" — 유튜브에서 보기</span>
+      </span>
+    </a>
+  </section>
+
+  <section class="experience">
+    <h2 class="section-title">경력</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">데이터 사이언티스트 · 코오롱인더스트리 FnC</span>
+        <span class="job-meta">서울, 대한민국 · 2023.01 – 현재</span>
+      </div>
+
+      <h4 class="track">ML</h4>
+      <ul>
+        <li>scikit-learn 기반 협업 필터링으로 브랜드 유사도 스코어를 산출해 고객 구매 확장 범위를 넓히고 캠페인 타겟팅 효과를 개선</li>
+      </ul>
+
+      <h4 class="track">생성형 AI (LLM)</h4>
+      <ul>
+        <li>AI 기반 캠페인(전시/기획전) 자동화 시스템을 구축해 수작업 기획 부담을 줄이고 프로모션 운영을 확장 가능한 구조로 전환</li>
+        <li>생성형 AI를 활용한 상품 메타데이터 추출 파이프라인을 설계·구현해, 비정형 카탈로그 데이터를 검색·추천·머천다이징에 쓸 수 있는 정형 속성으로 변환</li>
+        <li>색상·성별·TPO·스타일·카테고리·키워드·브랜드·시즌으로 구성된 메타데이터 스키마를 표준화해 약 18만 개 상품에 대해 확장 가능한 인덱싱·검색 체계 구축</li>
+        <li>GCP Cloud Composer와 Vertex AI Pipelines로 브랜드 스타일 태그 추출 파이프라인 구축</li>
+      </ul>
+
+      <h4 class="track">분석</h4>
+      <ul>
+        <li>BigQuery, Google Sheets, Slides를 연동한 고객 분석 대시보드 개발을 주도해 매출·리텐션·AOV·이탈 지표를 하나의 리포팅 체계로 통합</li>
+        <li>CRM 타겟팅 및 라이프사이클 세분화를 지원하는 RFM 기반 고객 스코어링 프레임워크 설계</li>
+        <li>과거 구매 이력을 기반으로 고객별 할인 선호도를 분석해 개인화 캠페인 타겟팅에 활용</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">데이터 컨설턴트 · Seoul Analytica</span>
+        <span class="job-meta">서울, 대한민국 · 2022.04 – 2022.10</span>
+      </div>
+
+      <h4 class="track">ML</h4>
+      <ul>
+        <li>협업 필터링 기반 추천 시스템을 개발해 여행 상품 개인화 수준을 향상</li>
+      </ul>
+
+      <h4 class="track">분석</h4>
+      <ul>
+        <li>RFM 기반 고객 세분화 및 정기 비즈니스 리포팅 체계를 구축해 고객 데이터를 실행 가능한 인사이트로 전환</li>
+        <li>콜센터 데이터에 대한 프로세스 마이닝을 통해 운영 비효율 구간을 파악하고 워크플로 개선 과제 도출</li>
+        <li>대규모 비정형 텍스트 데이터 분석에 자연어 처리 기법 적용</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2 class="section-title">대표 프로젝트</h2>
+
+    <article class="project">
+      <h3>상품 상세 이미지 속성 자동 추출 <span style="font-weight:400;color:var(--color-text-muted);font-size:0.85em;">(AWS AI Industry Week 발표)</span></h3>
+
+      <h4 class="subhead">진행 과정</h4>
+      <ul>
+        <li>소재·사이즈 등 상품 속성이 상품 상세페이지 이미지 안에 텍스트로만 존재해 시스템이 활용할 수 없던 문제를 해결하기 위해, 이미지 크로핑과 OCR 기반 필터링으로 전처리한 뒤 Amazon Bedrock(Claude Sonnet 3.5)에 입력해 속성·사이즈 정보를 추출</li>
+        <li>Few-shot 프롬프팅과 불용어 사전 기반 후처리로 할루시네이션을 걸러내, 추출 정확도를 82.9% → 96.6% → 99.6%까지 단계적으로 개선</li>
+        <li>Airflow로 6시간마다 자동 실행되는 파이프라인을 구축해, 신규 상품도 사람 개입 없이 속성 정보가 자동으로 채워지도록 설계</li>
+        <li>추출된 속성·사이즈 정보를 표준 포맷으로 DB에 적재해 상품 탐색 필터·검색·추천 고도화에 활용 가능하도록 정리</li>
+      </ul>
+
+      <h4 class="subhead">성과</h4>
+      <div class="impact-grid">
+        <div class="stat">
+          <span class="stat-number">-97%</span>
+          <span class="stat-label">처리 시간 (694일 → 약 16일)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">-81%</span>
+          <span class="stat-label">처리 비용 (5,700만 원 → 1,060만 원)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">+61%p</span>
+          <span class="stat-label">사이즈 정보 노출 상품 비율 · 13% → 74.4%</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">+33%</span>
+          <span class="stat-label">상품상세 클릭 대비 구매전환율</span>
+        </div>
+      </div>
+      <ul>
+        <li>전체 상품 속성 수를 149개에서 약 23만 개로 확장</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <h3>AI 캠페인 빌더 개발</h3>
+
+      <h4 class="subhead">진행 과정</h4>
+      <ul>
+        <li>생성형 AI를 활용해 약 18만 건의 상품 메타데이터를 추출·구조화</li>
+        <li>색상·소재·스타일·TPO·카테고리·키워드 등 상품 속성을 표준화해 기계가 처리 가능한 캠페인 기획 데이터로 전환</li>
+        <li>구조화된 상품 메타데이터를 기반으로 캠페인 콘셉트, 상품 구성, 콘텐츠까지 자동 생성하는 AI 기반 캠페인(기획전) 자동화 시스템 개발</li>
+      </ul>
+
+      <h4 class="subhead">성과</h4>
+      <div class="impact-grid">
+        <div class="stat">
+          <span class="stat-number">1주 → 3분</span>
+          <span class="stat-label">캠페인 기획 소요 시간</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">약 100원</span>
+          <span class="stat-label">캠페인당 한계 비용(약 $0.1)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">최대 1,000만 원</span>
+          <span class="stat-label">캠페인당 창출 매출</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">CVR +4%p</span>
+          <span class="stat-label">전환율 3% → 7%</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="skills">
+    <h2 class="section-title">기술 스킬</h2>
+    <dl class="skills-table">
+      <dt>프로그래밍</dt>
+      <dd>Python, SQL</dd>
+      <dt>ML/AI</dt>
+      <dd>scikit-learn, 추천 시스템, 클러스터링, 분류, 회귀</dd>
+      <dt>클라우드 / MLOps</dt>
+      <dd>GCP, Vertex AI, BigQuery, Docker, Git, Airflow</dd>
+      <dt>분석</dt>
+      <dd>RFM, 코호트 분석, 리텐션, KPI 설계, 실험 설계</dd>
+      <dt>언어</dt>
+      <dd>한국어(모국어), 영어(비즈니스 활용 가능), 스페인어(중급)</dd>
+    </dl>
+  </section>
+
+  <section class="edu">
+    <h2 class="section-title">학력</h2>
+    <div class="edu-school">고려대학교, 서울</div>
+    <div class="edu-meta">2015.03 – 2021.02</div>
+    <ul>
+      <li>스페인어문학 학사</li>
+      <li>인문·문화산업 융합 전공(연계전공)</li>
+    </ul>
+  </section>
+
+  <footer class="page-footer">
+    <p>성명: 박나겸(로마자 표기 Nagyeom Park). 이메일·LinkedIn 아이디의 "naomipark"는 계정 핸들이며, AWS AI Industry Week 발표자료에서 실명을 확인했습니다.</p>
+  </footer>
+
+</main>
+</body>
+</html>

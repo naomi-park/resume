@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nagyeom (Naomi) Park — Data Scientist</title>
+<meta name="description" content="Resume and portfolio of Nagyeom (Naomi) Park, Data Scientist — campaign automation, brand recommendation systems, and product metadata extraction.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.ko.html" hreflang="ko">한국어</a>
+  <button onclick="window.print()" type="button">Print / Save as PDF</button>
+</div>
+
+<main class="page">
+
+  <header class="masthead">
+    <h1>Nagyeom (Naomi) Park</h1>
+    <div class="role">Data Scientist</div>
+    <ul class="contact-list">
+      <li>Seoul, South Korea</li>
+      <li><a href="mailto:naomipark206@gmail.com">naomipark206@gmail.com</a></li>
+      <li><a href="tel:+821041036329">+82 10-4103-6329</a></li>
+      <li><a href="https://www.linkedin.com/in/naomipark-24487b247" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </header>
+
+  <section class="summary">
+    <h2 class="section-title">Summary</h2>
+    <p>Data Scientist with 5 years of experience in e-commerce — 2 years building AI-driven products and 3 years in data analytics. A humanities background shapes how I read user behavior and the psychological drivers behind it, which pushes me toward more human-centered AI design. Core work spans campaign automation, brand recommendation systems, RFM segmentation, and large-scale product metadata extraction.</p>
+
+    <a class="callout" href="https://youtu.be/ya3NrPPY67w?si=jgMGDJByTdV1jHS6" target="_blank" rel="noopener">
+      <span class="play" aria-hidden="true">&#9654;</span>
+      <span class="callout-text">
+        <span class="label">Featured talk — AWS AI Industry Week</span>
+        <span class="title">"Metadata Extraction Automation" — watch on YouTube</span>
+      </span>
+    </a>
+  </section>
+
+  <section class="experience">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Data Scientist · Kolon Industry FnC</span>
+        <span class="job-meta">Seoul, South Korea · 2023.01 – Present</span>
+      </div>
+
+      <h4 class="track">ML</h4>
+      <ul>
+        <li>Built a brand similarity score using collaborative filtering (scikit-learn) to expand customer purchase scope and improve campaign targeting effectiveness.</li>
+      </ul>
+
+      <h4 class="track">Generative AI (LLM)</h4>
+      <ul>
+        <li>Built an AI-powered campaign (exhibition) automation system, reducing manual planning effort and enabling scalable promotional operations.</li>
+        <li>Designed and implemented product metadata extraction pipelines using generative AI, converting unstructured catalog data into structured attributes for search, recommendation, and merchandising.</li>
+        <li>Standardized a metadata schema (color, gender, TPO, style, category, keyword, brand, season) to enable scalable indexing and retrieval across ~180,000 products.</li>
+        <li>Built a brand style tag extraction pipeline with GCP Cloud Composer and Vertex AI Pipelines.</li>
+      </ul>
+
+      <h4 class="track">Analysis</h4>
+      <ul>
+        <li>Led development of a customer analytics dashboard (BigQuery, Google Sheets, Slides), integrating revenue, retention, AOV, and churn insights into a unified reporting system.</li>
+        <li>Designed an RFM-based customer scoring framework to support CRM targeting and lifecycle segmentation.</li>
+        <li>Analyzed customer-level discount preferences from historical purchase behavior to enable personalized campaign targeting.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Data Consultant · Seoul Analytica</span>
+        <span class="job-meta">Seoul, South Korea · 2022.04 – 2022.10</span>
+      </div>
+
+      <h4 class="track">ML</h4>
+      <ul>
+        <li>Developed a recommendation system using collaborative filtering, improving personalization of travel product offerings.</li>
+      </ul>
+
+      <h4 class="track">Analysis</h4>
+      <ul>
+        <li>Translated customer data into actionable insights through RFM-based segmentation and recurring business reporting frameworks.</li>
+        <li>Identified operational inefficiencies through process mining on call center data, supporting workflow optimization initiatives.</li>
+        <li>Applied natural language processing techniques to analyze unstructured text data at scale.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2 class="section-title">Portfolio Projects</h2>
+
+    <article class="project">
+      <h3>Brand Similarity Score Calculation</h3>
+
+      <h4 class="subhead">Process</h4>
+      <ul>
+        <li>Built a brand similarity model using item-based collaborative filtering, leveraging customer purchase and cart interaction data.</li>
+        <li>Calculated similarity with cosine similarity over large-scale behavioral data (~500K customers, 1,500+ brands).</li>
+        <li>Designed weighted interaction signals (purchase vs. cart activity) and tuned the data collection period to better reflect customer preference strength.</li>
+        <li>Applied the model to campaign targeting (app push notifications) by expanding audience pools beyond direct brand purchasers.</li>
+      </ul>
+
+      <h4 class="subhead">Impact</h4>
+      <div class="impact-grid">
+        <div class="stat">
+          <span class="stat-number">+2.3%p</span>
+          <span class="stat-label">CTR · 3.5% → 5.8%</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">+0.3%p</span>
+          <span class="stat-label">CVR · 1.3% → 1.6%</span>
+        </div>
+      </div>
+      <ul>
+        <li>Surfaced customer perceptions of brand positioning (e.g., sports vs. casual interpretation) that informed targeting decisions.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <h3>AI Campaign Builder Development</h3>
+
+      <h4 class="subhead">Process</h4>
+      <ul>
+        <li>Extracted and structured ~180,000 product metadata records using generative AI.</li>
+        <li>Standardized product attributes (color, texture, style, TPO, category, keywords) to enable machine-readable campaign planning.</li>
+        <li>Developed an AI-based campaign (exhibition) automation system that generates campaign concepts, product selection, and content from structured product metadata.</li>
+      </ul>
+
+      <h4 class="subhead">Impact</h4>
+      <div class="impact-grid">
+        <div class="stat">
+          <span class="stat-number">1wk → 3min</span>
+          <span class="stat-label">Campaign creation lead time</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">~$0.1</span>
+          <span class="stat-label">Marginal cost per campaign (₩100)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">₩10M</span>
+          <span class="stat-label">Revenue generated per campaign (up to)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">+4%p</span>
+          <span class="stat-label">CVR · 3% → 7%</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <dl class="skills-table">
+      <dt>Programming</dt>
+      <dd>Python, SQL</dd>
+      <dt>ML/AI</dt>
+      <dd>scikit-learn, recommendation systems, clustering, classification, regression</dd>
+      <dt>Cloud / MLOps</dt>
+      <dd>GCP, Vertex AI, BigQuery, Docker, Git, Airflow</dd>
+      <dt>Analytics</dt>
+      <dd>RFM, cohort analysis, retention, KPI design, experimentation</dd>
+      <dt>Languages</dt>
+      <dd>Korean (Native), English (Business Proficiency), Spanish (Intermediate)</dd>
+    </dl>
+  </section>
+
+  <section class="edu">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-school">Korea University, Seoul</div>
+    <div class="edu-meta">2015.03 – 2021.02</div>
+    <ul>
+      <li>B.A. in Spanish Language and Literature</li>
+      <li>Interdisciplinary studies in Humanities and Cultural Industries</li>
+    </ul>
+  </section>
+
+  <footer class="page-footer">
+    <p>Name display note: the source resume header used the Romanized form "Nagyeom Park," while the contact handles use "naomipark." Both forms are shown together above pending confirmation of the preferred public-facing name.</p>
+  </footer>
+
+</main>
+</body>
+</html>

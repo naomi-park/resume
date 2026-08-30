@@ -1,0 +1,471 @@
+/* naomi_resume — shared stylesheet for index.ko.html / index.en.html */
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f7f7f5;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-border: #e2e2df;
+  --color-accent: #2f5d50;
+  --color-accent-soft: #e8f0ed;
+  --color-chip-bg: #f0efe9;
+  --color-accent-contrast: #ffffff;
+  --max-width: 780px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+    "Malgun Gothic", "Apple SD Gothic Neo", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #15191a;
+    --color-bg-alt: #1b2020;
+    --color-text: #e9e7e2;
+    --color-text-muted: #9ba39e;
+    --color-border: #2d3433;
+    --color-accent: #7cc4a4;
+    --color-accent-soft: #1d2b26;
+    --color-chip-bg: #212726;
+    --color-accent-contrast: #0f1513;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #15191a;
+  --color-bg-alt: #1b2020;
+  --color-text: #e9e7e2;
+  --color-text-muted: #9ba39e;
+  --color-border: #2d3433;
+  --color-accent: #7cc4a4;
+  --color-accent-soft: #1d2b26;
+  --color-chip-bg: #212726;
+  --color-accent-contrast: #0f1513;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  font-size: 16px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* ---------- top bar (lang switch, print) ---------- */
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem 0;
+}
+
+.topbar a,
+.topbar button {
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.topbar a:hover,
+.topbar button:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ---------- header / identity ---------- */
+
+.masthead {
+  border-bottom: 2px solid var(--color-text);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.masthead h1 {
+  font-size: 2rem;
+  margin: 0 0 0.15rem;
+  letter-spacing: -0.01em;
+}
+
+.masthead h1 .name-en {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin-left: 0.5rem;
+}
+
+.masthead .role {
+  font-size: 1.05rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+
+.contact-list a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.contact-list a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+/* ---------- sections ---------- */
+
+section {
+  margin-bottom: 2.25rem;
+}
+
+h2.section-title {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.summary p {
+  margin: 0 0 1rem;
+}
+
+/* ---------- featured talk callout ---------- */
+
+.callout {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.callout:hover {
+  filter: brightness(0.97);
+}
+
+.callout .play {
+  flex: 0 0 auto;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.callout .callout-text .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.callout .callout-text .title {
+  font-weight: 600;
+}
+
+/* ---------- experience ---------- */
+
+.job {
+  margin-bottom: 1.5rem;
+}
+
+.job:last-child {
+  margin-bottom: 0;
+}
+
+.job-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-header .job-title {
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+.job-header .job-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.job h4.track {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin: 0.7rem 0 0.35rem;
+}
+
+.job ul {
+  margin: 0 0 0.2rem;
+  padding-left: 1.15rem;
+}
+
+.job li {
+  margin-bottom: 0.3rem;
+}
+
+/* ---------- portfolio projects ---------- */
+
+.project {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+  background: var(--color-bg);
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.05rem;
+}
+
+.project h4.subhead {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin: 0.9rem 0 0.4rem;
+}
+
+.project h4.subhead:first-of-type {
+  margin-top: 0;
+}
+
+.project ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.project li {
+  margin-bottom: 0.3rem;
+}
+
+.project-image {
+  margin: 0 0 0.9rem;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.project-image figcaption {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-top: 0.4rem;
+}
+
+.img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  border: 1px dashed var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  background: var(--color-bg-alt);
+  text-align: center;
+  padding: 1rem;
+}
+
+.project.todo {
+  border-style: dashed;
+}
+
+.project.todo h3::after {
+  content: "작성 중";
+  display: inline-block;
+  margin-left: 0.6rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  background: var(--color-chip-bg);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  vertical-align: middle;
+}
+
+.todo-note {
+  color: var(--color-text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.4rem 0 0.6rem;
+}
+
+.stat {
+  background: var(--color-chip-bg);
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+}
+
+.stat .stat-number {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1.25;
+}
+
+.stat .stat-label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-top: 0.1rem;
+}
+
+/* ---------- skills ---------- */
+
+.skills-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  font-size: 0.94rem;
+}
+
+.skills-table dt {
+  font-weight: 700;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.skills-table dd {
+  margin: 0;
+}
+
+/* ---------- education ---------- */
+
+.edu-school {
+  font-weight: 700;
+}
+
+.edu-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.edu ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+/* ---------- footer ---------- */
+
+footer.page-footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15.5px;
+  }
+  .masthead h1 {
+    font-size: 1.6rem;
+  }
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body {
+    background: #fff;
+  }
+  .topbar {
+    display: none;
+  }
+  .page {
+    padding: 0;
+    max-width: none;
+  }
+  .project,
+  .callout {
+    break-inside: avoid;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  section {
+    margin-bottom: 1.4rem;
+  }
+}
