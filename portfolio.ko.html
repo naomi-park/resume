@@ -97,7 +97,6 @@
         <li>Few-shot 프롬프팅과 불용어 사전 기반 후처리로 할루시네이션을 걸러내, 추출 정확도를 82.9% → 96.6% → 99.6%까지 단계적으로 개선</li>
         <li>Airflow로 6시간마다 자동 실행되는 파이프라인을 구축해, 신규 상품도 사람 개입 없이 속성 정보가 자동으로 채워지도록 설계</li>
         <li>추출된 속성·사이즈 정보를 표준 포맷으로 DB에 적재해 상품 탐색 필터·검색·추천 고도화에 활용 가능하도록 정리</li>
-        <li>추출한 사이즈 측정값(어깨너비·가슴단면·소매기장 등)을 브랜드마다 제각각이던 텍스트 표기 대신 표 형태로 표준화해, 상품상세 페이지에 별도 '사이즈' 탭으로 노출 — 상세 이미지를 끝까지 스크롤해야 찾을 수 있던 정보를 탭 클릭 한 번으로 확인 가능하도록 개선</li>
       </ul>
 
       <h4 class="subhead">성과</h4>
@@ -118,17 +117,38 @@
           <span class="stat-number">+33%</span>
           <span class="stat-label">상품상세 클릭 대비 구매전환율</span>
         </div>
-        <div class="stat">
-          <span class="stat-number">+17%</span>
-          <span class="stat-label">사이즈탭 유무별 구매전환율 · 3.56% → 4.18%</span>
-        </div>
       </div>
       <ul>
         <li>전체 상품 속성 수를 149개에서 약 23만 개로 확장</li>
       </ul>
     </article>
 
-    <!-- 4. AI 캠페인 빌더 개발 -->
+    <!-- 4. 사이즈탭 노출로 상품 탐색 개선 -->
+    <article class="project">
+      <h3>사이즈 정보 표준화 및 사이즈탭 노출 <span style="font-weight:400;color:var(--color-text-muted);font-size:0.85em;">(AWS AI Industry Week 발표)</span></h3>
+
+      <figure class="project-image">
+        <img src="assets/images/size-tab-conversion-comparison.png" alt="사이즈탭 없는 경우와 있는 경우의 구매전환율 비교, 그리고 사이즈탭 AS-IS/TO-BE 화면 캡처">
+        <figcaption>코오롱몰 — 사이즈탭 유무에 따른 클릭 대비 구매전환율 비교 (3.56% → 4.18%)</figcaption>
+      </figure>
+
+      <h4 class="subhead">진행 과정</h4>
+      <ul>
+        <li>사이즈 정보가 상품상세 이미지 안에 브랜드마다 제각각인 형식의 텍스트로만 존재해, 고객이 원하는 치수를 확인하려면 긴 이미지를 끝까지 스크롤해야 하는 불편이 있었음</li>
+        <li>상품 속성 자동 추출 파이프라인에서 뽑아낸 사이즈 측정값(어깨너비·가슴단면·소매기장 등)을 부위별 cm 표로 표준화</li>
+        <li>표준화된 사이즈 표를 상품상세 페이지에 별도 '사이즈' 탭으로 노출해, 브랜드에 상관없이 동일한 형식·탭 클릭 한 번으로 원하는 치수를 확인할 수 있도록 UI 개선</li>
+      </ul>
+
+      <h4 class="subhead">성과</h4>
+      <div class="impact-grid">
+        <div class="stat">
+          <span class="stat-number">+17%</span>
+          <span class="stat-label">사이즈탭 유무별 구매전환율 · 3.56% → 4.18%</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. AI 캠페인 빌더 개발 -->
     <article class="project">
       <h3>AI 캠페인 빌더 개발</h3>
 
@@ -166,7 +186,7 @@
       </div>
     </article>
 
-    <!-- 5. AEO 개선 -->
+    <!-- 6. AEO 개선 -->
     <article class="project">
       <h3>AEO(Answer Engine Optimization) 개선</h3>
 
